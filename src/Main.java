@@ -12,5 +12,12 @@ public class Main {
         SystemInformation.getSystemInformation();
 
         System.out.println("Конечная стоимость топлива " + FillingStation.countPrice());
+        System.out.println("");
+
+        Tasks.firstTask();
+
+        Tasks.secondTask();
+
+        Tasks.thirdTask();
     }
 }

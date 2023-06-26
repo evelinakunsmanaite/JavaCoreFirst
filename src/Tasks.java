@@ -50,4 +50,12 @@ public class Tasks {
             System.out.println("Олимпиада: " + i + " года");
         }
     }
+
+    public static void fourthTask (int number){
+int result;
+        for (int i = 0; i < 9; i++) {
+            result = i*number;
+            System.out.println(i + " x " + number + " = " + result);
+        }
+    }
 }

@@ -53,7 +53,7 @@ public class Tasks {
 
     public static void fourthTask (int number){
 int result;
-        for (int i = 0; i < 9; i++) {
+        for (int i = 0; i <= 9; i++) {
             result = i*number;
             System.out.println(i + " x " + number + " = " + result);
         }

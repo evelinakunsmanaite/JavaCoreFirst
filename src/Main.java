@@ -1,5 +1,6 @@
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -19,5 +20,10 @@ public class Main {
         Tasks.secondTask();
 
         Tasks.thirdTask();
+
+        System.out.println("\nВведите число от 0 до 9");
+        Scanner scanner = new Scanner(System.in);
+        int number = scanner.nextInt();
+        Tasks.fourthTask(number);
     }
 }

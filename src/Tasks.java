@@ -51,10 +51,10 @@ public class Tasks {
         }
     }
 
-    public static void fourthTask (int number){
-int result;
+    public static void fourthTask(int number) {
+        int result;
         for (int i = 0; i <= 9; i++) {
-            result = i*number;
+            result = i * number;
             System.out.println(i + " x " + number + " = " + result);
         }
     }

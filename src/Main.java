@@ -9,13 +9,11 @@ public class Main {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm:ss MM/dd/yyyy");
         LocalDateTime localDateTime = LocalDateTime.now();
 
-        System.out.println("Сейчас: " + localDateTime.format(formatter));
-        System.out.println("");
+        System.out.println("Сейчас: " + localDateTime.format(formatter) + "\n");
 
         SystemInformation.getSystemInformation();
 
-        System.out.println("Конечная стоимость топлива " + FillingStation.countPrice());
-        System.out.println("");
+        System.out.println("Конечная стоимость топлива " + FillingStation.countPrice() + "\n");
 
         Tasks.firstTask();
 
@@ -37,10 +35,12 @@ public class Main {
         System.out.println("\nВведите b");
         int b = scanner.nextInt();
 
-        if (a <= b) {
+        if (a >= b) {
             System.out.println("Данные введены некорректно");
         } else {
             Tasks.sixth(a, b);
         }
+
+
     }
 }

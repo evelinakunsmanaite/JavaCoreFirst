@@ -10,14 +10,12 @@ public class Tasks {
             i++;
         }
 
-        System.out.println("");
-        System.out.println("\nВ строчку через for");
+        System.out.println("\n\nВ строчку через for");
         for (int j = 0; j < 10; j++) {
             System.out.print("JAVA ");
         }
 
-        System.out.println("");
-        System.out.println("\nВ столбик через while");
+        System.out.println("\n\nВ столбик через while");
         int g = 1;
         while (g <= 10) {
             System.out.println("JAVA ");
@@ -72,10 +70,19 @@ public class Tasks {
     }
 
     public static void sixth(int a, int b) {
+        System.out.println("\nЧерез for:");
         for (int i = a; i <= b; i++) {
             if ((i % 5 == 0) && (i % 10 != 0)) {
                 System.out.println(i);
             }
+        }
+
+        System.out.println("\nЧерез while:");
+        while (a != b) {
+            if ((a % 5 == 0) && (a % 10 != 0)) {
+                System.out.println(a);
+            }
+            a++;
         }
     }
 }

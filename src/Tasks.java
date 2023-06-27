@@ -69,7 +69,7 @@ public class Tasks {
         }
     }
 
-    public static void sixth(int a, int b) {
+    public static void sixthTask(int a, int b) {
         System.out.println("\nЧерез for:");
         for (int i = a; i <= b; i++) {
             if ((i % 5 == 0) && (i % 10 != 0)) {
@@ -84,5 +84,17 @@ public class Tasks {
             }
             a++;
         }
+    }
+
+    public static void seventhTask(double x) {
+        double y;
+        if ((x > -3) && (x < 5)) {
+            y = (x + 3) * (Math.pow(x, 2) - 2);
+        } else if (x >= 5) {
+            y = (Math.pow(x, 2) - 10) / (x + 7);
+        } else {
+            y = 420;
+        }
+        System.out.println("x = " + x + "\n" + "y = " + y);
     }
 }

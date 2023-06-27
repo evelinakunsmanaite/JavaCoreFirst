@@ -38,9 +38,11 @@ public class Main {
         if (a >= b) {
             System.out.println("Данные введены некорректно");
         } else {
-            Tasks.sixth(a, b);
+            Tasks.sixthTask(a, b);
         }
 
-
+        System.out.println("\nВведите x");
+        double x = scanner.nextDouble();
+        Tasks.seventhTask(x);
     }
 }

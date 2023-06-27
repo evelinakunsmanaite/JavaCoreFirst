@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm:ss MM/dd/yyyy");
         LocalDateTime localDateTime = LocalDateTime.now();
 
@@ -22,8 +24,11 @@ public class Main {
         Tasks.thirdTask();
 
         System.out.println("\nВведите число от 0 до 9");
-        Scanner scanner = new Scanner(System.in);
         int number = scanner.nextInt();
         Tasks.fourthTask(number);
+
+        System.out.println("\nВведите номер этажа");
+        int floorNumber = scanner.nextInt();
+        Tasks.fifthTask(floorNumber);
     }
 }

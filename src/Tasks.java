@@ -58,4 +58,16 @@ public class Tasks {
             System.out.println(i + " x " + number + " = " + result);
         }
     }
+
+    public static void fifthTask(int floorNumber) {
+        if (floorNumber >= 1 && floorNumber <= 4) {
+            System.out.println("Малоэтажный дом");
+        } else if (floorNumber >= 5 && floorNumber <= 8) {
+            System.out.println("Среднеэтажный дом");
+        } else if (floorNumber >= 9) {
+            System.out.println("Многоэтажный дом");
+        } else {
+            System.out.println("Данного этажа не существует, проверьте корректность введённой информации");
+        }
+    }
 }

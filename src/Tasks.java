@@ -107,4 +107,9 @@ public class Tasks {
             default -> System.out.println("Неизвестная страна");
         }
     }
+
+    public static void dividedBy(double dividend, double divisor) {
+        double result = dividend / divisor;
+        System.out.println(dividend + " / " + divisor + " = " + result);
+    }
 }

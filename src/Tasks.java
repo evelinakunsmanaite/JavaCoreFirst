@@ -97,4 +97,14 @@ public class Tasks {
         }
         System.out.println("x = " + x + "\n" + "y = " + y);
     }
+
+    public static void getCapitalByCity(String cityName) {
+        switch (cityName) {
+            case "Минск", "Витебск", "Брест" -> System.out.println("Страна: Беларусь");
+            case "Рим", "Милан", "Турин" -> System.out.println("Страна: Италия");
+            case "Ливерпуль", "Манчестер", "Лондон" -> System.out.println("Страна: Англия");
+            case "Берлин", "Мюнхен", "Кёльн" -> System.out.println("Страна: Германия");
+            default -> System.out.println("Неизвестная страна");
+        }
+    }
 }

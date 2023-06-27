@@ -44,5 +44,15 @@ public class Main {
         System.out.println("\nВведите x");
         double x = scanner.nextDouble();
         Tasks.seventhTask(x);
+
+        while (true){
+        System.out.println("\nВведите страну");
+        String cityName = scanner.next();
+            if (!cityName.equals("stop")) {
+                Tasks.getCapitalByCity(cityName);
+            } else {
+                break;
+            }
+        }
     }
 }

@@ -30,5 +30,17 @@ public class Main {
         System.out.println("\nВведите номер этажа");
         int floorNumber = scanner.nextInt();
         Tasks.fifthTask(floorNumber);
+
+        System.out.println("\nВведите диапазон от а до b");
+        System.out.println("\nВведите а");
+        int a = scanner.nextInt();
+        System.out.println("\nВведите b");
+        int b = scanner.nextInt();
+
+        if (a <= b) {
+            System.out.println("Данные введены некорректно");
+        } else {
+            Tasks.sixth(a, b);
+        }
     }
 }

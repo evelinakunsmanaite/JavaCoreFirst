@@ -70,4 +70,12 @@ public class Tasks {
             System.out.println("Данного этажа не существует, проверьте корректность введённой информации");
         }
     }
+
+    public static void sixth(int a, int b) {
+        for (int i = a; i <= b; i++) {
+            if ((i % 5 == 0) && (i % 10 != 0)) {
+                System.out.println(i);
+            }
+        }
+    }
 }

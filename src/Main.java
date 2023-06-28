@@ -82,5 +82,9 @@ public class Main {
             }
             i++;
         }
+
+        System.out.println("Введите размер массива: ");
+        int arrayLength = scanner.nextInt();
+        SecondTask.createArrayAndGetInfo(arrayLength);
     }
 }

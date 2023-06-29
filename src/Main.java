@@ -90,5 +90,7 @@ public class Main {
         SecondTask.getArrayInfo();
 
         SecondTask.multiDimensionalArrays();
+
+        SecondTask.getMaxSum();
     }
 }

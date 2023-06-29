@@ -94,4 +94,25 @@ public class SecondTask {
         System.out.println("Индекс максимального значения: " + indexMax);
 
     }
+
+    public static void getMaxSum() {
+        int[] array = new int[10];
+        int maxSum = Integer.MIN_VALUE;
+        int sum, firstIndex = 0;
+        for (int i = 0; i < array.length; i++) {
+            array[i] = (int) (Math.random() * 10);
+        }
+
+        for (int i = 2; i < array.length; i++) {
+            sum = array[i - 2] + array[i - 1] + array[i];
+            if (sum > maxSum) {
+                maxSum = sum;
+                firstIndex = i - 2;
+            }
+        }
+
+        System.out.println("Массив: " + Arrays.toString(array));
+        System.out.println("Максимальная сумма трёх соседних элементов: " + maxSum);
+        System.out.println("Индекс первого из тройки, с максимальной суммой: " + firstIndex);
+    }
 }

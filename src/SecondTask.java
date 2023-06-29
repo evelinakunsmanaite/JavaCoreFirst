@@ -68,8 +68,9 @@ public class SecondTask {
     public static void multiDimensionalArrays() {
         int[][] array = new int[3][5];
         int sum = 0;
-        int[] arrSun = new int[array.length];
+        int[] arrSum = new int[array.length];
         int max = Integer.MIN_VALUE;
+        int indexMax = 0;
 
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[i].length; j++) {
@@ -79,16 +80,18 @@ public class SecondTask {
             }
 
             System.out.println("Сумма: " + sum);
-            arrSun[i] = sum;
+            arrSum[i] = sum;
             sum = 0;
 
-            if (arrSun[i] > max) {
-                max = arrSun[i];
+            if (arrSum[i] > max) {
+                max = arrSum[i];
+                indexMax = i;
             }
         }
 
-        System.out.println(Arrays.toString(arrSun));
-        System.out.println("Max: " + max);
+        System.out.println(Arrays.toString(arrSum));
+        System.out.println("Максимальная сумма в строках: " + max);
+        System.out.println("Индекс максимального значения: " + indexMax);
 
     }
 }

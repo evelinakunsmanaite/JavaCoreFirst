@@ -16,19 +16,6 @@ public class Airplane {
         return fuel;
     }
 
-    public void info() {
-        System.out.println("Производитель: " + producer);
-        System.out.println("Год выпуска: " + year);
-        System.out.println("Длина: " + length);
-        System.out.println("Вес: " + weight);
-        System.out.println("Топливо: " + fuel);
-    }
-
-    public double fillUp(double plusFuel) {
-        fuel = plusFuel;
-        return fuel;
-    }
-
     public void setProducer(String producer) {
         this.producer = producer;
     }
@@ -43,5 +30,34 @@ public class Airplane {
 
     public void setWeight(double weight) {
         this.weight = weight;
+    }
+
+    public double getLength() {
+        return length;
+    }
+
+    public void info() {
+        System.out.println("Производитель: " + producer);
+        System.out.println("Год выпуска: " + year);
+        System.out.println("Длина: " + length);
+        System.out.println("Вес: " + weight);
+        System.out.println("Топливо: " + fuel);
+    }
+
+    public double fillUp(double plusFuel) {
+        fuel = plusFuel;
+        return fuel;
+    }
+
+    public static void compareAirplanes(Airplane airplaneOne, Airplane airplaneTwo) {
+        if (airplaneOne.getLength() > airplaneTwo.getLength()) {
+            System.out.println("\nДлиннее самолёт: ");
+            airplaneOne.info();
+        } else if (airplaneOne.getLength() < airplaneTwo.getLength()) {
+            System.out.println("\nДлиннее самолёт: ");
+            airplaneTwo.info();
+        } else {
+            System.out.println("\nДлины самолётов равны");
+        }
     }
 }

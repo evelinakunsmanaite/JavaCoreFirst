@@ -121,15 +121,21 @@ public class Main {
 //        int yearMotorbike = scanner.nextInt();
 //        System.out.println("Разница: " + motorbike.yearDifference(yearMotorbike));
 
-//        Airplane airplane = new Airplane("Japan", 2022, 951.55, 85.96);
-//        airplane.setYear(2023);
-//        airplane.setLength(1226.52);
-//        airplane.fillUp(26.652);
-//        airplane.fillUp(22.35);
-//        airplane.info();
+        Airplane airplane = new Airplane("Japan", 2022, 951.55, 85.96);
+        Airplane airplane1 = new Airplane("China", 2022, 125.12, 56.63);
 
-        Teacher teacher = new Teacher("Lina", "math");
-        Student student = new Student("Jon");
-        teacher.evaluate(student);
+        airplane.setYear(2023);
+        airplane.setLength(1226.52);
+        airplane.fillUp(26.652);
+        airplane.fillUp(22.35);
+        airplane.info();
+
+        airplane1.info();
+
+        Airplane.compareAirplanes(airplane, airplane1);
+
+//        Teacher teacher = new Teacher("Lina", "math");
+//        Student student = new Student("Jon");
+//        teacher.evaluate(student);
     }
 }

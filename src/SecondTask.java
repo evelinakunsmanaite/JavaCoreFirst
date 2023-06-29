@@ -32,4 +32,36 @@ public class SecondTask {
         System.out.println("Количество нечётных чисел: " + countOdd);
         System.out.println("Сумма всех элементов массива: " + sum);
     }
+
+    public static void getArrayInfo() {
+        int[] array = new int[100];
+
+        int max = Integer.MIN_VALUE;
+        int min = Integer.MAX_VALUE;
+        int countZeroNumbers = 0;
+        double sumZeroNumbers = 0;
+
+        for (int i = 0; i < array.length; i++) {
+            array[i] = (int) (Math.random() * 1000);
+        }
+
+        for (int element : array) {
+            if (element > max) {
+                max = element;
+            }
+            if (element < min) {
+                min = element;
+            }
+            if ((element % 10 == 0) || (element == 0)) {
+                countZeroNumbers++;
+                sumZeroNumbers += element;
+            }
+        }
+
+        System.out.println("Массив: " + Arrays.toString(array));
+        System.out.println("Максимальный элемент массива: " + max);
+        System.out.println("Минимальный элемент массива: " + min);
+        System.out.println("Количество элементов массива, оканчивающихся на 0: " + countZeroNumbers);
+        System.out.println("Сумма элементов, оканчивающихся на 0: " + sumZeroNumbers);
+    }
 }

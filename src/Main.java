@@ -109,6 +109,7 @@ public class Main {
 
         System.out.println(secondCar);
 
-
+        Motorbike motorbike = new Motorbike(2011, "black", "Honda CB1300");
+        System.out.println(motorbike);
     }
 }

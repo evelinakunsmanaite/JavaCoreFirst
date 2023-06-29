@@ -93,33 +93,39 @@ public class Main {
 //
 //        SecondTask.getMaxSum();
 
-        Car car = new Car();
-        car.info();
-        car.setYear(2017);
-        car.setColor("black");
-        car.setModel("Porsche Panamera E-Hybrid");
+//        Car car = new Car();
+//        car.info();
+//        car.setYear(2017);
+//        car.setColor("black");
+//        car.setModel("Porsche Panamera E-Hybrid");
+//
+//        System.out.println("Год выпуска: " + car.getYear());
+//        System.out.println("Цвет: " + car.getColor());
+//        System.out.println("Модель: " + car.getModel());
+//
+//        Car secondCar = new Car();
+//        secondCar.setYear(2019);
+//        secondCar.setColor("white");
+//        secondCar.setModel("Ford Focus");
+//
+//        System.out.println("\nВведите год: ");
+//        int year = scanner.nextInt();
+//        System.out.println("Разница: " + secondCar.yearDifference(year));
+//
+//        System.out.println(secondCar);
+//
+//        Motorbike motorbike = new Motorbike(2011, "black", "Honda CB1300");
+//        motorbike.info();
+//        System.out.println(motorbike);
+//        System.out.println("\nВведите год: ");
+//        int yearMotorbike = scanner.nextInt();
+//        System.out.println("Разница: " + motorbike.yearDifference(yearMotorbike));
 
-        System.out.println("Год выпуска: " + car.getYear());
-        System.out.println("Цвет: " + car.getColor());
-        System.out.println("Модель: " + car.getModel());
-
-        Car secondCar = new Car();
-        secondCar.setYear(2019);
-        secondCar.setColor("white");
-        secondCar.setModel("Ford Focus");
-
-        System.out.println("\nВведите год: ");
-        int year = scanner.nextInt();
-        System.out.println("Разница: " + secondCar.yearDifference(year));
-
-        System.out.println(secondCar);
-
-        Motorbike motorbike = new Motorbike(2011, "black", "Honda CB1300");
-        motorbike.info();
-        System.out.println(motorbike);
-        System.out.println("\nВведите год: ");
-        int yearMotorbike = scanner.nextInt();
-        System.out.println("Разница: " + motorbike.yearDifference(yearMotorbike));
-
+        Airplane airplane = new Airplane("Japan", 2022, 951.55, 85.96);
+        airplane.setYear(2023);
+        airplane.setLength(1226.52);
+        airplane.fillUp(26.652);
+        airplane.fillUp(22.35);
+        airplane.info();
     }
 }

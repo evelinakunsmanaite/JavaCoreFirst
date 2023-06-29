@@ -88,5 +88,7 @@ public class Main {
         SecondTask.createArrayAndGetInfo(arrayLength);
 
         SecondTask.getArrayInfo();
+
+        SecondTask.multiDimensionalArrays();
     }
 }

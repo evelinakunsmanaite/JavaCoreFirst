@@ -94,6 +94,7 @@ public class Main {
 //        SecondTask.getMaxSum();
 
         Car car = new Car();
+        car.info();
         car.setYear(2017);
         car.setColor("black");
         car.setModel("Porsche Panamera E-Hybrid");
@@ -107,9 +108,18 @@ public class Main {
         secondCar.setColor("white");
         secondCar.setModel("Ford Focus");
 
+        System.out.println("\nВведите год: ");
+        int year = scanner.nextInt();
+        System.out.println("Разница: " + secondCar.yearDifference(year));
+
         System.out.println(secondCar);
 
         Motorbike motorbike = new Motorbike(2011, "black", "Honda CB1300");
+        motorbike.info();
         System.out.println(motorbike);
+        System.out.println("\nВведите год: ");
+        int yearMotorbike = scanner.nextInt();
+        System.out.println("Разница: " + motorbike.yearDifference(yearMotorbike));
+
     }
 }

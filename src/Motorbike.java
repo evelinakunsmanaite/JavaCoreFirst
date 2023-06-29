@@ -8,6 +8,14 @@ public class Motorbike {
         this.model = model;
     }
 
+    public void info() {
+        System.out.println("\nЭто мотоцикл!");
+    }
+
+    public int yearDifference(int diffYear) {
+        return Math.abs(diffYear - year);
+    }
+
     @Override
     public String toString() {
         return "\nyear: " + year +

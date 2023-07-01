@@ -60,4 +60,14 @@ public class Airplane {
             System.out.println("\nДлины самолётов равны");
         }
     }
+
+    @Override
+    public String toString() {
+        return "Airplane:" +
+                "\nproducer: " + producer +
+                "\nyear: " + year +
+                "\nlength: " + length +
+                "\nweight: " + weight +
+                "\nfuel: " + fuel;
+    }
 }

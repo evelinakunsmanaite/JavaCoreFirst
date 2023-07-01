@@ -175,6 +175,9 @@ public class Main {
 //        Airplane airplane = new Airplane("Japan", 2022, 951.55, 85.96);
 //        System.out.println(airplane);
 
-Task1.main();
+//Task1.main();
+
+       TestFigures.main();
+
     }
 }

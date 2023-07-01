@@ -171,8 +171,10 @@ public class Main {
 //        System.out.println("Выносливость 5: " + player5.getStamina());
 //        System.out.println("Выносливость 6: " + player6.getStamina());
 
-        TaskStrBuilder.getStr();
-        Airplane airplane = new Airplane("Japan", 2022, 951.55, 85.96);
-        System.out.println(airplane);
+//        TaskStrBuilder.getStr();
+//        Airplane airplane = new Airplane("Japan", 2022, 951.55, 85.96);
+//        System.out.println(airplane);
+
+Task1.main();
     }
 }

@@ -137,38 +137,40 @@ public class Main {
 //        Teacher teacher = new Teacher("Lina", "math");
 //        Student student = new Student("Jon");
 //        teacher.evaluate(student);
-        Player player1 = new Player();
-        Player player2 = new Player();
-        Player player3 = new Player();
-        Player player4 = new Player();
-        Player player5 = new Player();
-        Player player6 = new Player();
+//        Player player1 = new Player();
+//        Player player2 = new Player();
+//        Player player3 = new Player();
+//        Player player4 = new Player();
+//        Player player5 = new Player();
+//        Player player6 = new Player();
+//
+//        Player.info();
+//
+//        System.out.println("Выносливость 1: " + player1.getStamina());
+//        System.out.println("Выносливость 2: " + player2.getStamina());
+//        System.out.println("Выносливость 3: " + player3.getStamina());
+//        System.out.println("Выносливость 4: " + player4.getStamina());
+//        System.out.println("Выносливость 5: " + player5.getStamina());
+//        System.out.println("Выносливость 6: " + player6.getStamina());
+//
+//        for (int i = 0; i < 95; i++) {
+//            player1.run();
+//            player2.run();
+//            player3.run();
+//            player4.run();
+//            player5.run();
+//            player6.run();
+//        }
+//
+//        Player.info();
+//
+//        System.out.println("Выносливость 1: " + player1.getStamina());
+//        System.out.println("Выносливость 2: " + player2.getStamina());
+//        System.out.println("Выносливость 3: " + player3.getStamina());
+//        System.out.println("Выносливость 4: " + player4.getStamina());
+//        System.out.println("Выносливость 5: " + player5.getStamina());
+//        System.out.println("Выносливость 6: " + player6.getStamina());
 
-        Player.info();
-
-        System.out.println("Выносливость 1: " + player1.getStamina());
-        System.out.println("Выносливость 2: " + player2.getStamina());
-        System.out.println("Выносливость 3: " + player3.getStamina());
-        System.out.println("Выносливость 4: " + player4.getStamina());
-        System.out.println("Выносливость 5: " + player5.getStamina());
-        System.out.println("Выносливость 6: " + player6.getStamina());
-
-        for (int i = 0; i < 95; i++) {
-            player1.run();
-            player2.run();
-            player3.run();
-            player4.run();
-            player5.run();
-            player6.run();
-        }
-
-        Player.info();
-
-        System.out.println("Выносливость 1: " + player1.getStamina());
-        System.out.println("Выносливость 2: " + player2.getStamina());
-        System.out.println("Выносливость 3: " + player3.getStamina());
-        System.out.println("Выносливость 4: " + player4.getStamina());
-        System.out.println("Выносливость 5: " + player5.getStamina());
-        System.out.println("Выносливость 6: " + player6.getStamina());
+        TaskStrBuilder.getStr();
     }
 }

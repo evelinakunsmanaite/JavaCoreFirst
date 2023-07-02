@@ -177,7 +177,18 @@ public class Main {
 
 //Task1.main();
 
-       TestFigures.main();
+//       TestFigures.main();
+
+
+        Warehouse warehouse = new Warehouse();
+
+        Picker picker = new Picker(warehouse);
+        Courier courier = new Courier(warehouse);
+
+        picker.doWork();
+        courier.doWork();
+
+        System.out.println(warehouse);
 
     }
 }

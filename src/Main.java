@@ -1,5 +1,8 @@
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
+import day12.Task1;
+import first.Courier;
+import first.Picker;
+import first.Warehouse;
+
 import java.util.Scanner;
 
 public class Main {
@@ -11,23 +14,23 @@ public class Main {
 //
 //        System.out.println("Сейчас: " + localDateTime.format(formatter) + "\n");
 //
-//        SystemInformation.getSystemInformation();
+//        first.SystemInformation.getSystemInformation();
 //
-//        System.out.println("Конечная стоимость топлива " + FillingStation.countPrice() + "\n");
+//        System.out.println("Конечная стоимость топлива " + first.FillingStation.countPrice() + "\n");
 //
-//        Tasks.firstTask();
+//        first.Tasks.firstTask();
 //
-//        Tasks.secondTask();
+//        first.Tasks.secondTask();
 //
-//        Tasks.thirdTask();
+//        first.Tasks.thirdTask();
 //
 //        System.out.println("\nВведите число от 0 до 9");
 //        int number = scanner.nextInt();
-//        Tasks.fourthTask(number);
+//        first.Tasks.fourthTask(number);
 //
 //        System.out.println("\nВведите номер этажа");
 //        int floorNumber = scanner.nextInt();
-//        Tasks.fifthTask(floorNumber);
+//        first.Tasks.fifthTask(floorNumber);
 //
 //        System.out.println("\nВведите диапазон от а до b");
 //        System.out.println("\nВведите а");
@@ -38,18 +41,18 @@ public class Main {
 //        if (a >= b) {
 //            System.out.println("Данные введены некорректно");
 //        } else {
-//            Tasks.sixthTask(a, b);
+//            first.Tasks.sixthTask(a, b);
 //        }
 //
 //        System.out.println("\nВведите x");
 //        double x = scanner.nextDouble();
-//        Tasks.seventhTask(x);
+//        first.Tasks.seventhTask(x);
 //
 //        while (true) {
 //            System.out.println("\nВведите страну");
 //            String cityName = scanner.next();
 //            if (!cityName.equals("stop")) {
-//                Tasks.getCapitalByCity(cityName);
+//                first.Tasks.getCapitalByCity(cityName);
 //            } else {
 //                System.out.println("Завершение программы");
 //                break;
@@ -62,7 +65,7 @@ public class Main {
 //            System.out.println("\nВведите делитель");
 //            double divisor = scanner.nextDouble();
 //            if (divisor != 0) {
-//                Tasks.dividedBy(dividend, divisor);
+//                first.Tasks.dividedBy(dividend, divisor);
 //            } else {
 //                System.out.println("Завершение программы");
 //                break;
@@ -78,22 +81,22 @@ public class Main {
 //            if (divisor == 0) {
 //                System.out.println("Деление на 0");
 //            } else {
-//                Tasks.dividedBy(dividend, divisor);
+//                first.Tasks.dividedBy(dividend, divisor);
 //            }
 //            i++;
 //        }
 //
 //        System.out.println("Введите размер массива: ");
 //        int arrayLength = scanner.nextInt();
-//        SecondTask.createArrayAndGetInfo(arrayLength);
+//        first.SecondTask.createArrayAndGetInfo(arrayLength);
 //
-//        SecondTask.getArrayInfo();
+//        first.SecondTask.getArrayInfo();
 //
-//        SecondTask.multiDimensionalArrays();
+//        first.SecondTask.multiDimensionalArrays();
 //
-//        SecondTask.getMaxSum();
+//        first.SecondTask.getMaxSum();
 
-//        Car car = new Car();
+//        first.Car car = new first.Car();
 //        car.info();
 //        car.setYear(2017);
 //        car.setColor("black");
@@ -103,7 +106,7 @@ public class Main {
 //        System.out.println("Цвет: " + car.getColor());
 //        System.out.println("Модель: " + car.getModel());
 //
-//        Car secondCar = new Car();
+//        first.Car secondCar = new first.Car();
 //        secondCar.setYear(2019);
 //        secondCar.setColor("white");
 //        secondCar.setModel("Ford Focus");
@@ -114,15 +117,15 @@ public class Main {
 //
 //        System.out.println(secondCar);
 //
-//        Motorbike motorbike = new Motorbike(2011, "black", "Honda CB1300");
+//        first.Motorbike motorbike = new first.Motorbike(2011, "black", "Honda CB1300");
 //        motorbike.info();
 //        System.out.println(motorbike);
 //        System.out.println("\nВведите год: ");
 //        int yearMotorbike = scanner.nextInt();
 //        System.out.println("Разница: " + motorbike.yearDifference(yearMotorbike));
 
-//        Airplane airplane = new Airplane("Japan", 2022, 951.55, 85.96);
-//        Airplane airplane1 = new Airplane("China", 2022, 125.12, 56.63);
+//        first.Airplane airplane = new first.Airplane("Japan", 2022, 951.55, 85.96);
+//        first.Airplane airplane1 = new first.Airplane("China", 2022, 125.12, 56.63);
 //
 //        airplane.setYear(2023);
 //        airplane.setLength(1226.52);
@@ -132,19 +135,19 @@ public class Main {
 //
 //        airplane1.info();
 //
-//        Airplane.compareAirplanes(airplane, airplane1);
+//        first.Airplane.compareAirplanes(airplane, airplane1);
 
-//        Teacher teacher = new Teacher("Lina", "math");
-//        Student student = new Student("Jon");
+//        first.Teacher teacher = new first.Teacher("Lina", "math");
+//        first.Student student = new first.Student("Jon");
 //        teacher.evaluate(student);
-//        Player player1 = new Player();
-//        Player player2 = new Player();
-//        Player player3 = new Player();
-//        Player player4 = new Player();
-//        Player player5 = new Player();
-//        Player player6 = new Player();
+//        first.Player player1 = new first.Player();
+//        first.Player player2 = new first.Player();
+//        first.Player player3 = new first.Player();
+//        first.Player player4 = new first.Player();
+//        first.Player player5 = new first.Player();
+//        first.Player player6 = new first.Player();
 //
-//        Player.info();
+//        first.Player.info();
 //
 //        System.out.println("Выносливость 1: " + player1.getStamina());
 //        System.out.println("Выносливость 2: " + player2.getStamina());
@@ -162,7 +165,7 @@ public class Main {
 //            player6.run();
 //        }
 //
-//        Player.info();
+//        first.Player.info();
 //
 //        System.out.println("Выносливость 1: " + player1.getStamina());
 //        System.out.println("Выносливость 2: " + player2.getStamina());
@@ -171,24 +174,26 @@ public class Main {
 //        System.out.println("Выносливость 5: " + player5.getStamina());
 //        System.out.println("Выносливость 6: " + player6.getStamina());
 
-//        TaskStrBuilder.getStr();
-//        Airplane airplane = new Airplane("Japan", 2022, 951.55, 85.96);
+//        first.TaskStrBuilder.getStr();
+//        first.Airplane airplane = new first.Airplane("Japan", 2022, 951.55, 85.96);
 //        System.out.println(airplane);
 
-//Task1.main();
+//first.Task1.main();
 
-//       TestFigures.main();
+//       first.TestFigures.main();
 
 
-        Warehouse warehouse = new Warehouse();
+//        Warehouse warehouse = new Warehouse();
+//
+//        Picker picker = new Picker(warehouse);
+//        Courier courier = new Courier(warehouse);
+//
+//        picker.doWork();
+//        courier.doWork();
+//
+//        System.out.println(warehouse);
 
-        Picker picker = new Picker(warehouse);
-        Courier courier = new Courier(warehouse);
-
-        picker.doWork();
-        courier.doWork();
-
-        System.out.println(warehouse);
+        Task1.autoList();
 
     }
 }

@@ -1,4 +1,5 @@
 import day12.Task1;
+import day12.Task2;
 import first.Courier;
 import first.Picker;
 import first.Warehouse;
@@ -193,7 +194,8 @@ public class Main {
 //
 //        System.out.println(warehouse);
 
-        Task1.autoList();
+//        Task1.autoList();
 
+        Task2.intList();
     }
 }

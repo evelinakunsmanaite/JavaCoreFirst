@@ -1,6 +1,6 @@
+import Task3D12.Task3;
 import day12.Task1;
 import day12.Task2;
-import day12.Task3;
 import first.Courier;
 import first.Picker;
 import first.Warehouse;
@@ -199,6 +199,7 @@ public class Main {
 
 //        Task2.intList();
 
-        Task3.getMusicBands();
+//        Task3.getMusicBands();
+        Task3.band();
     }
 }

@@ -2,6 +2,8 @@ import Task3D12.Task3;
 import Task5D12.Task5;
 import day12.Task1;
 import day12.Task2;
+import day13.BinaryTree;
+import day13.Node;
 import first.Courier;
 import first.Picker;
 import first.Warehouse;
@@ -201,6 +203,22 @@ public class Main {
 //        Task2.intList();
 
 //        Task3.getMusicBands();
-        Task5.band();
+//        Task5.band();
+
+        BinaryTree binaryTree = new BinaryTree();
+        binaryTree.addNode(20);
+        binaryTree.addNode(14);
+        binaryTree.addNode(11);
+        binaryTree.addNode(5);
+        binaryTree.addNode(8);
+        binaryTree.addNode(16);
+        binaryTree.addNode(15);
+        binaryTree.addNode(18);
+        binaryTree.addNode(22);
+        binaryTree.addNode(23);
+        binaryTree.addNode(27);
+        binaryTree.addNode(24);
+        binaryTree.addNode(150);
+        binaryTree.inOrderTraversal(binaryTree.getRoot());
     }
 }

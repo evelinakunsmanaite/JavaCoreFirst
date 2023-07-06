@@ -3,6 +3,8 @@ package day12;
 import java.util.ArrayList;
 import java.util.List;
 
+import static java.util.Collections.shuffle;
+
 public class Task3 {
     public static void getMusicBands() {
         List<MusicBand> bands = new ArrayList<>();
@@ -28,6 +30,8 @@ public class Task3 {
         bands.add(musicBand8);
         bands.add(musicBand9);
         bands.add(musicBand10);
+
+        shuffle(bands);
 
         System.out.println("Список всех музыкальных групп:\n");
         for (MusicBand musicBand : bands) {

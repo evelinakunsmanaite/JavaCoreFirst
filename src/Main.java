@@ -1,4 +1,5 @@
 import Task3D12.Task3;
+import Task5D12.Task5;
 import day12.Task1;
 import day12.Task2;
 import first.Courier;
@@ -200,6 +201,6 @@ public class Main {
 //        Task2.intList();
 
 //        Task3.getMusicBands();
-        Task3.band();
+        Task5.band();
     }
 }

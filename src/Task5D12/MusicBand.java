@@ -1,23 +1,23 @@
-package Task3D12;
+package Task5D12;
 
 import java.util.List;
 
 public class MusicBand {
     private String name;
     private int year;
-    private List<String> musicBandMembers;
+    private List<MusicArtist> musicBandMembers;
 
-    public MusicBand(String name, int year, List<String> musicBandMembers) {
+    public MusicBand(String name, int year, List<MusicArtist> musicBandMembers) {
         this.name = name;
         this.year = year;
         this.musicBandMembers = musicBandMembers;
     }
 
-    public List<String> getMusicBandMembers() {
+    public List<MusicArtist> getMusicBandMembers() {
         return musicBandMembers;
     }
 
-    public void addMember(String memberName) {
+    public void addMember(MusicArtist memberName) {
         musicBandMembers.add(memberName);
     }
 
@@ -25,15 +25,16 @@ public class MusicBand {
         return name;
     }
 
-    public void deleteMember(String memberName) {
+    public void deleteMember(MusicArtist memberName) {
         musicBandMembers.remove(memberName);
     }
 
     public void printMembers() {
-        for (String member : musicBandMembers) {
+        for (MusicArtist member : musicBandMembers) {
             System.out.println(member);
         }
     }
+
     public static void transferMembers(MusicBand musicBand1, MusicBand musicBand2) {
         musicBand2.getMusicBandMembers().addAll(musicBand1.getMusicBandMembers());
         musicBand1.getMusicBandMembers().clear();

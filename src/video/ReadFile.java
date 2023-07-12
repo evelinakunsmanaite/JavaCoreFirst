@@ -6,14 +6,14 @@ import java.util.Scanner;
 
 public class ReadFile {
 
-    public static void getFile(){
+    public static void getFile() {
         String separator = File.separator;
-        String path = separator + "D:"+separator+"javaa"+separator+"file.txt";
+        String path = separator + "D:" + separator + "javaa" + separator + "file.txt";
         File file = new File(path);
         Scanner scanner;
         try {
-             scanner = new Scanner(file);
-            while (scanner.hasNextLine()){
+            scanner = new Scanner(file);
+            while (scanner.hasNextLine()) {
                 System.out.println(scanner.nextLine());
             }
             scanner.close();

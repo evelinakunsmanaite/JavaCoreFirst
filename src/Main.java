@@ -1,8 +1,12 @@
 import day11.BinaryTree;
 import day13.MessageDatabase;
 import day13.User;
+import day14.IllegalLength;
+import day14.Task1;
 import video.ReadFile;
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class Main {
@@ -248,7 +252,16 @@ public class Main {
 //
 //        System.out.println(MessageDatabase.getMessage());
 
-        ReadFile.getFile();
+//        ReadFile.getFile();
+
+
+        try {
+            Task1.printSumDigits(new File("file1"));
+        } catch (FileNotFoundException e) {
+            System.out.println("Файл не найден");
+        } catch (IllegalLength e) {
+            System.out.println("Некорректный входной файл");
+        }
 
     }
 }

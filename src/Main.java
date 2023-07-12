@@ -1,6 +1,7 @@
 import day11.BinaryTree;
 import day13.MessageDatabase;
 import day13.User;
+import video.ReadFile;
 
 import java.util.Scanner;
 
@@ -215,37 +216,39 @@ public class Main {
 //        binaryTree.addNode(150);
 //        binaryTree.inOrderTraversal(binaryTree.getRoot());
 
-        User user1 = new User("Lina");
-        User user2 = new User("Jon");
-        User user3 = new User("Andrew");
+//        User user1 = new User("Lina");
+//        User user2 = new User("Jon");
+//        User user3 = new User("Andrew");
+//
+//        user1.sendMessage(user2, "Hi, Jon");
+//        user1.sendMessage(user2, "Help me pleas");
+//
+//        user2.sendMessage(user1, "Hi, Lina");
+//        user2.sendMessage(user1, "Yep");
+//        user2.sendMessage(user1, "What do u wanna do?");
+//
+//        user3.sendMessage(user1, "Hi");
+//        user3.sendMessage(user1, "Let's go to the cinema");
+//        user3.sendMessage(user1, "at 5");
+//
+//        user1.sendMessage(user3, "Hi");
+//        user1.sendMessage(user3, "Yep");
+//        user1.sendMessage(user3, "Why not");
+//
+//        user3.sendMessage(user1, "Cool)");
+//
+//        MessageDatabase.showDialog(user1, user3);
+//
+//        user1.subscribe(user3);
+//        user3.subscribe(user1);
+//
+//        System.out.println(user1.isSubscribed(user3));
+//        System.out.println(user1.isFriends(user3));
+//        System.out.println(user1.isFriends(user2));
+//
+//        System.out.println(MessageDatabase.getMessage());
 
-        user1.sendMessage(user2, "Hi, Jon");
-        user1.sendMessage(user2, "Help me pleas");
-
-        user2.sendMessage(user1, "Hi, Lina");
-        user2.sendMessage(user1, "Yep");
-        user2.sendMessage(user1, "What do u wanna do?");
-
-        user3.sendMessage(user1, "Hi");
-        user3.sendMessage(user1, "Let's go to the cinema");
-        user3.sendMessage(user1, "at 5");
-
-        user1.sendMessage(user3, "Hi");
-        user1.sendMessage(user3, "Yep");
-        user1.sendMessage(user3, "Why not");
-
-        user3.sendMessage(user1, "Cool)");
-
-        MessageDatabase.showDialog(user1, user3);
-
-        user1.subscribe(user3);
-        user3.subscribe(user1);
-
-        System.out.println(user1.isSubscribed(user3));
-        System.out.println(user1.isFriends(user3));
-        System.out.println(user1.isFriends(user2));
-
-        System.out.println(MessageDatabase.getMessage());
+        ReadFile.getFile();
 
     }
 }

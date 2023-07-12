@@ -4,6 +4,7 @@ import day13.User;
 import day14.IllegalLength;
 import day14.Task1;
 import day14.Task2;
+import day14.Task3;
 import video.ReadFile;
 
 import java.io.File;
@@ -264,14 +265,20 @@ public class Main {
 //            System.out.println("Некорректный входной файл");
 //        }
 
+//        try {
+//            System.out.println(Task2.parseFileToStringList(new File("people")));
+//        } catch (FileNotFoundException e) {
+//            System.out.println("Файл не найден");
+//        } catch (IllegalLength e) {
+//            System.out.println("Некорректный входной файл");
+//        }
+
         try {
-            System.out.println(Task2.parseFileToStringList(new File("people")));
+            System.out.println(Task3.parseFileToObjList(new File("people")));
         } catch (FileNotFoundException e) {
             System.out.println("Файл не найден");
         } catch (IllegalLength e) {
             System.out.println("Некорректный входной файл");
         }
-
-
     }
 }

@@ -3,6 +3,7 @@ import day13.MessageDatabase;
 import day13.User;
 import day14.IllegalLength;
 import day14.Task1;
+import day14.Task2;
 import video.ReadFile;
 
 import java.io.File;
@@ -255,13 +256,20 @@ public class Main {
 //        ReadFile.getFile();
 
 
+//        try {
+//            Task1.printSumDigits(new File("file1"));
+//        } catch (FileNotFoundException e) {
+//            System.out.println("Файл не найден");
+//        } catch (IllegalLength e) {
+//            System.out.println("Некорректный входной файл");
+//        }
+
         try {
-            Task1.printSumDigits(new File("file1"));
+            System.out.println(Task2.parseFileToStringList(new File("people")));
         } catch (FileNotFoundException e) {
             System.out.println("Файл не найден");
         } catch (IllegalLength e) {
             System.out.println("Некорректный входной файл");
         }
-
     }
 }

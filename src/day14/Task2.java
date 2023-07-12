@@ -16,9 +16,14 @@ public class Task2 {
         while (scanner.hasNextLine()) {
 
             String[] peoples = scanner.nextLine().split("\n");
-            peopleList.addAll(Arrays.asList(peoples));
+            for (String people : peoples) {
+                if (people.contains("-")) {
+                    throw new IllegalLength();
+                } else {
+                    peopleList.add(people);
+                }
+            }
         }
-
         return peopleList;
     }
 }

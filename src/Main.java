@@ -271,5 +271,7 @@ public class Main {
         } catch (IllegalLength e) {
             System.out.println("Некорректный входной файл");
         }
+
+
     }
 }

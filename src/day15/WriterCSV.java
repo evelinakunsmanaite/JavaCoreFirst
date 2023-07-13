@@ -8,8 +8,7 @@ public class WriterCSV {
 
     private static String filePath = "file.csv";
 
-    public static void createCSVFile()
-    {
+    public static void createCSVFile() {
         try (
                 BufferedWriter writer = new BufferedWriter(new FileWriter(filePath))) {
             // Запись заголовка

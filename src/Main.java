@@ -5,11 +5,13 @@ import day14.IllegalLength;
 import day14.Task1;
 import day14.Task2;
 import day14.Task3;
+import day15.ReadCSVFile;
 import day15.WriterCSV;
 import video.ReadFile;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Main {
@@ -283,6 +285,9 @@ public class Main {
 //        }
 //    }
 
-        WriterCSV.createCSVFile();
+//        WriterCSV.createCSVFile();
+
+//        ReadCSVFile.readFile();
+        ReadCSVFile.putToCSVFile();
     }
 }

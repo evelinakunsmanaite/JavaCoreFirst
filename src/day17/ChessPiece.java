@@ -9,10 +9,11 @@ public enum ChessPiece {
     ROOK_BLACK(5, "Ладья (чёрный)"),
     BISHOP_WHITE(3.5, "Слон (белый)"),
     BISHOP_BLACK(3.5, "Слон (чёрный)"),
-    HORSE_WHITE(3, "Конь (белый)"),
-    HORSE_BLACK(3, "Конь (чёрный)"),
+    KNIGHT_WHITE(3, "Конь (белый)"),
+    KNIGHT_BLACK(3, "Конь (чёрный)"),
     PAWN_WHITE(1, "Пешка (белая)"),
-    PAWN_BLACK(1, "Пешка (чёрный)");
+    PAWN_BLACK(1, "Пешка (чёрный)"),
+    EMPTY(-1, "_");
 
     private double value;
     private String designation;

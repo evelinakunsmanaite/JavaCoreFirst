@@ -298,6 +298,7 @@ public class Main {
 
 //        Writer.secondFileReader();
 
-        Chess.getChessPieceArray();
+//        Chess.getChessPieceArray();
+        Chess.chessPieceCreate();
     }
 }

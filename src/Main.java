@@ -7,6 +7,7 @@ import day14.Task2;
 import day14.Task3;
 import day15.ReadCSVFile;
 import day15.WriterCSV;
+import day16.Reader;
 import video.ReadFile;
 
 import java.io.File;
@@ -15,7 +16,7 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException {
         Scanner scanner = new Scanner(System.in);
 
 //        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm:ss MM/dd/yyyy");
@@ -287,7 +288,10 @@ public class Main {
 
 //        WriterCSV.createCSVFile();
 
-//        ReadCSVFile.readFile();
-        ReadCSVFile.putToCSVFile();
+//        ReadCSVFile.Reader();
+//        ReadCSVFile.putToCSVFile();
+
+        Reader.printResult(new File("day161"));
+
     }
 }

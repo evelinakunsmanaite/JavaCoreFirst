@@ -9,6 +9,8 @@ import day15.ReadCSVFile;
 import day15.WriterCSV;
 import day16.Reader;
 import day16.Writer;
+import day17.Chess;
+import day17.ChessPiece;
 import video.ReadFile;
 
 import java.io.File;
@@ -294,6 +296,8 @@ public class Main {
 
 //        Reader.printResult(new File("day161"));
 
-        Writer.secondFileReader();
+//        Writer.secondFileReader();
+
+        Chess.getChessPieceArray();
     }
 }

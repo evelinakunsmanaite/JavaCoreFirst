@@ -11,6 +11,7 @@ import day16.Reader;
 import day16.Writer;
 import day17.Chess;
 import day17.ChessPiece;
+import day18.Recursion;
 import video.ReadFile;
 
 import java.io.File;
@@ -299,6 +300,9 @@ public class Main {
 //        Writer.secondFileReader();
 
 //        Chess.getChessPieceArray();
-        Chess.chessPieceCreate();
+//        Chess.chessPieceCreate();
+
+        Recursion.recursionSum(0);
+        System.out.println("Количество 7к: " + Recursion.count7(717771237));
     }
 }
